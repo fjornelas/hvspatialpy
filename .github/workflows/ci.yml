@@ -1,0 +1,36 @@
+name: Example workflow for Codecov on hvspatialpy
+
+on:
+  push:
+    branches:
+      - codecov
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest-cov
+          pip install -r requirements.txt
+
+      - name: Run tests with coverage
+        run: |
+          coverage run -m pytest
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
