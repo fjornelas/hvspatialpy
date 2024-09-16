@@ -136,5 +136,4 @@ Evaluate the correlation of various spatially distributed HVSR curves at a site.
 ## Notes
 
 - Ensure that all file paths and directory names are correctly specified when using these functions.
-- For correlation calculations, the `scipy` and `tslearn` libraries are used, which may need to be installed separately.
 
