@@ -55,7 +55,7 @@ setup(
 
         'Topic :: Software Development :: Version Control :: Git',
     ],
-    keywords='HVSR, microtremors, geospatial statistics',
+    keywords='HVSR, geospatial statistics, spatial variability',
     packages=find_packages(),
     python_requires='>=3.8',
     install_requires=['numpy>=1.20', 'pandas<1.5.4', 'matplotlib', 'obspy', 'scipy',
