@@ -97,7 +97,7 @@ Examples of these can be found under the examples folder in the Github repositor
 
 ### Example of Frequency Interval Selection and Test Locations
 
-<img src="https://github.com/fjornelas/hvspatialpy/blob/main/fig/hvspatialpy_example.png?raw=true" width="775">
+<img src="https://github.com/fjornelas/hvspatialpy/blob/main/fig/spatial_figure.png?raw=true" width="775">
 
 # Citation
 
