@@ -3,3 +3,12 @@
 
 format: jb-book
 root: README
+parts:
+  - caption: Documentation
+    chapters:
+    - file: doc/hvcorr_doc
+    - file: doc/pltspatial_doc
+    - file: doc/hvspatialgui
+  - caption: Examples
+    chapters:
+    - file: examples/hvspatialpy_example
