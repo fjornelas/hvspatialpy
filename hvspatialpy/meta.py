@@ -7,7 +7,7 @@
 
 __all__ = ["__author__", "__copyright__", "__license__", "__title__", "__version__"]
 
-__version__ = "1.2.0"
+__version__ = "1.0.0"
 __author__ = "Francisco Javier Ornelas"
 __copyright__ = "Copyright 2024 Francisco Javier Ornelas"
 __license__ = "GNU General Public License v3"
