@@ -1,10 +1,10 @@
-# hvspatialpy
+# pltspatial
 
 This module is part of `hvspatialpy`, a Python package designed for evaluating the spatial variability of sites using spatially distributed HVSR (Horizontal-to-Vertical Spectral Ratio) measurements.
 
 ## Functions
 
-### `_plot_intervals(ax1, freq, mean_ref, min_freq, max_freq, freq_trun=0.1)`
+### `_plot_intervals`
 
 ### Description
 Plots the frequency intervals of the reference HVSR (Horizontal to Vertical Spectral Ratio).
@@ -22,7 +22,7 @@ None. This function displays a plot.
 
 ---
 
-### `_update_colorbar(ax, cbar, scatter, correlation_type='lcss')`
+### `_update_colorbar`
 
 ### Description
 Updates the colorbar with the latest scatter plot and label.
@@ -38,7 +38,7 @@ None. This function updates the colorbar.
 
 ---
 
-### `_plot_site_image(ax2, df_site, correlation_type='lcss', frequency_interval=None)`
+### `_plot_site_image`
 
 ### Description
 Plots site data on top of a topographic relief map using EPSG:4326 coordinates.
@@ -71,7 +71,7 @@ Updates the frequency interval DataFrame with the given parameters.
 
 ---
 
-### `update_correlations(base_dir, site, xml_folder_name, unique_folder_name, ref_test_name, mean_file_name, unique_flag=True, auto_dist_calc_flag=True, freq_trun=0.1, dist_meas_df=None, loc_df_manual=None, correlation_type='lcss', frequency_interval=None, threshold=1.6, min_distance=1, global_constraint='sakoe_chiba', eps=0.75, sakoe_chiba_radius=10, dist_range_list=None)`
+### `update_correlations`
 
 ### Description
 Updates the correlation plot when different input parameters change and provides interactive widgets to modify frequency intervals.
