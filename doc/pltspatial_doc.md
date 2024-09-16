@@ -1,4 +1,6 @@
-## hvspatialpy
+# hvspatialpy
+
+This module is part of `hvspatialpy`, a Python package designed for evaluating the spatial variability of sites using spatially distributed HVSR (Horizontal-to-Vertical Spectral Ratio) measurements.
 
 ## Functions
 
