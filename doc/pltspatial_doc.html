@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Documentation for Functions in hvspatialpy.py &#8212; hvspatialpy</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'doc/pltspatial_doc';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">hvspatialpy</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/fjornelas/hvspatialpy" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fjornelas/hvspatialpy/issues/new?title=Issue%20on%20page%20%2Fdoc/pltspatial_doc.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/doc/pltspatial_doc.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Documentation for Functions in hvspatialpy.py</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1"><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returns">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss"><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none"><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-dataframe-base-dir-site-num-peaks-min-freq-max-freq"><code class="docutils literal notranslate"><span class="pre">_update_dataframe(base_dir,</span> <span class="pre">site,</span> <span class="pre">num_peaks,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none"><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Returns</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="documentation-for-functions-in-hvspatialpy-py">
+<h1>Documentation for Functions in <code class="docutils literal notranslate"><span class="pre">hvspatialpy.py</span></code><a class="headerlink" href="#documentation-for-functions-in-hvspatialpy-py" title="Link to this heading">#</a></h1>
+<section id="plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1">
+<h2><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code><a class="headerlink" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1" title="Link to this heading">#</a></h2>
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<p>Plots the frequency intervals of the reference HVSR (Horizontal to Vertical Spectral Ratio).</p>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>ax1</strong> (<code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes</span></code>): The axis object on which to plot the intervals.</p></li>
+<li><p><strong>freq</strong> (<code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>): Frequency values.</p></li>
+<li><p><strong>mean_ref</strong> (<code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>): Mean HVSR reference values.</p></li>
+<li><p><strong>min_freq</strong> (<code class="docutils literal notranslate"><span class="pre">list[float]</span></code>): List of minimum frequencies for intervals.</p></li>
+<li><p><strong>max_freq</strong> (<code class="docutils literal notranslate"><span class="pre">list[float]</span></code>): List of maximum frequencies for intervals.</p></li>
+<li><p><strong>freq_trun</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional): Frequency to truncate the HVSR mean curve. Default is <code class="docutils literal notranslate"><span class="pre">0.1</span></code>.</p></li>
+</ul>
+</section>
+<section id="returns">
+<h2>Returns<a class="headerlink" href="#returns" title="Link to this heading">#</a></h2>
+<p>None. This function displays a plot.</p>
+</section>
+<hr class="docutils" />
+<section id="update-colorbar-ax-cbar-scatter-correlation-type-lcss">
+<h2><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code><a class="headerlink" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss" title="Link to this heading">#</a></h2>
+</section>
+<section id="id1">
+<h2>Description<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Updates the colorbar with the latest scatter plot and label.</p>
+</section>
+<section id="id2">
+<h2>Parameters<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>ax</strong> (<code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes</span></code>): The axis object associated with the colorbar.</p></li>
+<li><p><strong>cbar</strong> (<code class="docutils literal notranslate"><span class="pre">matplotlib.colorbar.Colorbar</span></code>): The colorbar object to be updated.</p></li>
+<li><p><strong>scatter</strong> (<code class="docutils literal notranslate"><span class="pre">matplotlib.collections.PathCollection</span></code>): The scatter plot object.</p></li>
+<li><p><strong>correlation_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): The type of correlation to be displayed in the colorbar label. Default is <code class="docutils literal notranslate"><span class="pre">'lcss'</span></code>.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>Returns<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>None. This function updates the colorbar.</p>
+</section>
+<hr class="docutils" />
+<section id="plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none">
+<h2><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code><a class="headerlink" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none" title="Link to this heading">#</a></h2>
+</section>
+<section id="id4">
+<h2>Description<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>Plots site data on top of a topographic relief map using EPSG:4326 coordinates.</p>
+</section>
+<section id="id5">
+<h2>Parameters<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>ax2</strong> (<code class="docutils literal notranslate"><span class="pre">matplotlib.axes.Axes</span></code>): The axis object on which to plot the site data.</p></li>
+<li><p><strong>df_site</strong> (<code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>): DataFrame containing ‘longitude’, ‘latitude’, and ‘correlation_value’.</p></li>
+<li><p><strong>correlation_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): Type of correlation value (used for colorbar label). Default is <code class="docutils literal notranslate"><span class="pre">'lcss'</span></code>.</p></li>
+<li><p><strong>frequency_interval</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional): Optional frequency interval to filter the data.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>Returns<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">matplotlib.figure.Figure</span></code> object: The figure used for plotting.</p>
+</section>
+<hr class="docutils" />
+<section id="update-dataframe-base-dir-site-num-peaks-min-freq-max-freq">
+<h2><code class="docutils literal notranslate"><span class="pre">_update_dataframe(base_dir,</span> <span class="pre">site,</span> <span class="pre">num_peaks,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq)</span></code><a class="headerlink" href="#update-dataframe-base-dir-site-num-peaks-min-freq-max-freq" title="Link to this heading">#</a></h2>
+</section>
+<section id="id7">
+<h2>Description<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Updates the frequency interval DataFrame with the given parameters.</p>
+</section>
+<section id="id8">
+<h2>Parameters<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>base_dir</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Base directory path where the site and test files are stored.</p></li>
+<li><p><strong>site</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>): Site test number.</p></li>
+<li><p><strong>num_peaks</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>): Number of peaks within the HVSR curve.</p></li>
+<li><p><strong>min_freq</strong> (<code class="docutils literal notranslate"><span class="pre">list[float]</span></code>): List of minimum frequencies of the intervals.</p></li>
+<li><p><strong>max_freq</strong> (<code class="docutils literal notranslate"><span class="pre">list[float]</span></code>): List of maximum frequencies of the intervals.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>Returns<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>: Updated DataFrame of the frequency intervals.</p>
+</section>
+<hr class="docutils" />
+<section id="update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none">
+<h2><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code><a class="headerlink" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none" title="Link to this heading">#</a></h2>
+</section>
+<section id="id10">
+<h2>Description<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>Updates the correlation plot when different input parameters change and provides interactive widgets to modify frequency intervals.</p>
+</section>
+<section id="id11">
+<h2>Parameters<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>base_dir</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Base directory where all the tests are stored.</p></li>
+<li><p><strong>site</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Site name where the tests for that site are stored.</p></li>
+<li><p><strong>xml_folder_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Folder name where XML files are relative to site and tests.</p></li>
+<li><p><strong>unique_folder_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Unique path where files are stored.</p></li>
+<li><p><strong>ref_test_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Name of the reference test.</p></li>
+<li><p><strong>mean_file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>): Filename used for the mean HVSR curve.</p></li>
+<li><p><strong>unique_flag</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional): Indicates if the folder scheme is unique. Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>auto_dist_calc_flag</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional): Indicates whether to use XML files or CSV file for identifying locations. Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>freq_trun</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional): Frequency to truncate the HVSR mean curve. Default is <code class="docutils literal notranslate"><span class="pre">0.1</span></code>.</p></li>
+<li><p><strong>dist_meas_df</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): Path to the distance measured DataFrame (.csv). Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p><strong>loc_df_manual</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): Path to the location DataFrame (.csv). Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p><strong>correlation_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): Type of correlation used in the analysis. Default is <code class="docutils literal notranslate"><span class="pre">'lcss'</span></code>.</p></li>
+<li><p><strong>frequency_interval</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional): Frequency interval to filter the data. Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p><strong>threshold</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional): Matching threshold used in ‘lcss’ correlation. Default is <code class="docutils literal notranslate"><span class="pre">1.6</span></code>.</p></li>
+<li><p><strong>min_distance</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional): Minimum distance between peaks. Default is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p><strong>global_constraint</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): Constraint type for correlation. Default is <code class="docutils literal notranslate"><span class="pre">'sakoe_chiba'</span></code>.</p></li>
+<li><p><strong>eps</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional): Matching threshold used in ‘lcss’ correlation. Default is <code class="docutils literal notranslate"><span class="pre">0.75</span></code>.</p></li>
+<li><p><strong>sakoe_chiba_radius</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional): Radius of warping window. Default is <code class="docutils literal notranslate"><span class="pre">10</span></code>.</p></li>
+<li><p><strong>dist_range_list</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional): String of tuple list to evaluate different distance ranges. Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2>Returns<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>: Frequency DataFrame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>: Correlation DataFrame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">matplotlib.figure.Figure</span></code>: The figure used in the analysis.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./doc"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1"><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returns">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss"><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none"><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-dataframe-base-dir-site-num-peaks-min-freq-max-freq"><code class="docutils literal notranslate"><span class="pre">_update_dataframe(base_dir,</span> <span class="pre">site,</span> <span class="pre">num_peaks,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Returns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none"><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Returns</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Francisco Javier Ornelas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
