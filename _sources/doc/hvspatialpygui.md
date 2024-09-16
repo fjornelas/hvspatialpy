@@ -1,4 +1,4 @@
-## `HVSpatialPYGui` Class Documentation
+# HVSpatialPYGui
 
 ## Overview
 
