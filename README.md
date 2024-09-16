@@ -8,6 +8,7 @@
    A python package that evaluates the spatial variability of a site utilizing HVSR.
 </p>
 
+[![DOI](https://zenodo.org/badge/857518332.svg)](https://zenodo.org/doi/10.5281/zenodo.13770431)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/80fc3884310249019b8508415f516f53)](https://app.codacy.com/gh/fjornelas/hvspatialpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![pypi - version](https://img.shields.io/pypi/v/hvspatialpy)
 [![Pages](https://github.com/fjornelas/hvspatialpy/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/fjornelas/hvspatialpy/actions/workflows/pages/pages-build-deployment)
