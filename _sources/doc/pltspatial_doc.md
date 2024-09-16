@@ -1,4 +1,6 @@
-## Documentation for Functions in `hvspatialpy.py`
+## hvspatialpy
+
+## Functions
 
 ### `_plot_intervals(ax1, freq, mean_ref, min_freq, max_freq, freq_trun=0.1)`
 
