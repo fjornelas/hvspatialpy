@@ -1,0 +1,207 @@
+2022-08-30 15:53:34.328 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 15:54:18.539 UTC: I(RawSohSamplingT|SOHAcquisitor): High power consumption monitoring started (threshold=0.400W)
+2022-08-30 15:54:18.867 UTC: I(PowerMonitorThr|LowVoltageMonitor): Monitoring started (shutdown threshold = 9.00000V, reconnect threshold = 10.00000V)
+2022-08-30 16:03:32.171 UTC: I(TimingThread): timing uncertainty check: T=+23.12C, heuristic=+567.5 (limit=+/-550.0), deltaT=-0.007|+1.640|+1.644 degC, elapsed=675s, expiry=2700s
+2022-08-30 16:03:32.179 UTC: I(TimingThread|freeRun): exit
+2022-08-30 16:03:32.183 UTC: I(TimingThread|discipline): enter
+2022-08-30 16:03:32.183 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 16:03:33.183 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 16:03:34.878 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 16:03:34.886 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 16:03:45.292 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 16:03:45.300 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4569'N 121°36.7658'W alt=63.6m satellites=8
+2022-08-30 16:03:45.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=12s)
+2022-08-30 16:03:46.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = +29 counts (+1.5 us)
+2022-08-30 16:03:46.003 UTC: I(TimingThread|PllController): clock drift estimate: +8.9 usec/hour (+0.047 counts/sec), measured over 612 s
+2022-08-30 16:03:46.003 UTC: I(TimingThread|PllController): boost VCXO frequency offset by -0.047 Hz
+2022-08-30 16:04:34.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ -0.847 Hz, DAC=39238.96, T_converge=50s
+2022-08-30 16:04:35.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 16:04:35.008 UTC: I(TimingThread|freeRun): enter
+2022-08-30 16:04:35.512 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 16:15:33.140 UTC: I(TimingThread): timing uncertainty check: T=+24.73C, heuristic=+569.9 (limit=+/-550.0), deltaT=-0.007|+1.606|+1.606 degC, elapsed=723s, expiry=2700s
+2022-08-30 16:15:33.148 UTC: I(TimingThread|freeRun): exit
+2022-08-30 16:15:33.148 UTC: I(TimingThread|discipline): enter
+2022-08-30 16:15:33.152 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 16:15:34.152 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 16:15:35.859 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 16:15:35.867 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 16:15:51.296 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 16:15:51.304 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4557'N 121°36.7630'W alt=70.9m satellites=8
+2022-08-30 16:15:51.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=17s)
+2022-08-30 16:15:52.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -28 counts (-1.5 us)
+2022-08-30 16:15:52.003 UTC: I(TimingThread|PllController): clock drift estimate: -7.8 usec/hour (-0.041 counts/sec), measured over 677 s
+2022-08-30 16:15:52.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.041 Hz
+2022-08-30 16:16:40.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ -0.706 Hz, DAC=39252.75, T_converge=50s
+2022-08-30 16:16:41.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 16:16:41.008 UTC: I(TimingThread|freeRun): enter
+2022-08-30 16:16:41.770 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 16:27:39.230 UTC: I(TimingThread): timing uncertainty check: T=+26.36C, heuristic=+599.1 (limit=+/-550.0), deltaT=-0.008|+1.630|+1.630 degC, elapsed=728s, expiry=2700s
+2022-08-30 16:27:39.234 UTC: I(TimingThread|freeRun): exit
+2022-08-30 16:27:39.238 UTC: I(TimingThread|discipline): enter
+2022-08-30 16:27:39.242 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 16:27:40.242 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 16:27:41.953 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 16:27:41.960 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 16:27:51.296 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 16:27:51.300 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4559'N 121°36.7616'W alt=67.3m satellites=9
+2022-08-30 16:27:51.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=11s)
+2022-08-30 16:27:51.996 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -41 counts (-2.1 us)
+2022-08-30 16:27:52.003 UTC: I(TimingThread|PllController): clock drift estimate: -11.5 usec/hour (-0.061 counts/sec), measured over 671 s
+2022-08-30 16:27:52.003 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.061 Hz
+2022-08-30 16:28:42.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ -0.495 Hz, DAC=39273.34, T_converge=52s
+2022-08-30 16:28:43.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 16:28:43.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 16:28:43.473 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 16:39:41.421 UTC: I(TimingThread): timing uncertainty check: T=+28.08C, heuristic=+630.9 (limit=+/-550.0), deltaT=-0.007|+1.726|+1.726 degC, elapsed=723s, expiry=2700s
+2022-08-30 16:39:41.429 UTC: I(TimingThread|freeRun): exit
+2022-08-30 16:39:41.433 UTC: I(TimingThread|discipline): enter
+2022-08-30 16:39:41.437 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 16:39:42.437 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 16:39:44.132 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 16:39:44.136 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 16:39:57.300 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 16:39:57.304 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4546'N 121°36.7620'W alt=65.6m satellites=8
+2022-08-30 16:39:57.996 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=15s)
+2022-08-30 16:39:58.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -90 counts (-4.7 us)
+2022-08-30 16:39:58.003 UTC: I(TimingThread|PllController): clock drift estimate: -25.0 usec/hour (-0.133 counts/sec), measured over 675 s
+2022-08-30 16:39:58.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.133 Hz
+2022-08-30 16:40:53.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ -0.162 Hz, DAC=39305.84, T_converge=57s
+2022-08-30 16:40:54.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 16:40:54.008 UTC: I(TimingThread|freeRun): enter
+2022-08-30 16:40:54.473 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 16:52:52.460 UTC: I(TimingThread): timing uncertainty check: T=+29.54C, heuristic=+624.2 (limit=+/-550.0), deltaT=-0.003|+1.457|+1.460 degC, elapsed=792s, expiry=2700s
+2022-08-30 16:52:52.468 UTC: I(TimingThread|freeRun): exit
+2022-08-30 16:52:52.472 UTC: I(TimingThread|discipline): enter
+2022-08-30 16:52:52.472 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 16:52:53.472 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 16:52:55.171 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 16:52:55.175 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 16:53:03.308 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 16:53:03.316 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4565'N 121°36.7621'W alt=68.6m satellites=11
+2022-08-30 16:53:03.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=10s)
+2022-08-30 16:53:04.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -112 counts (-5.8 us)
+2022-08-30 16:53:04.003 UTC: I(TimingThread|PllController): clock drift estimate: -28.8 usec/hour (-0.153 counts/sec), measured over 730 s
+2022-08-30 16:53:04.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.153 Hz
+2022-08-30 16:54:00.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +0.192 Hz, DAC=39340.31, T_converge=58s
+2022-08-30 16:54:01.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 16:54:01.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 16:54:01.676 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:08:59.195 UTC: I(TimingThread): timing uncertainty check: T=+31.05C, heuristic=+601.4 (limit=+/-550.0), deltaT=-0.008|+1.513|+1.513 degC, elapsed=968s, expiry=2700s
+2022-08-30 17:08:59.199 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:08:59.203 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:08:59.207 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:09:00.207 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:09:01.917 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:09:01.921 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:09:15.312 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:09:15.320 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4573'N 121°36.7619'W alt=68.9m satellites=11
+2022-08-30 17:09:15.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=15s)
+2022-08-30 17:09:15.996 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -118 counts (-6.1 us)
+2022-08-30 17:09:16.003 UTC: I(TimingThread|PllController): clock drift estimate: -24.2 usec/hour (-0.129 counts/sec), measured over 915 s
+2022-08-30 17:09:16.003 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.129 Hz
+2022-08-30 17:10:11.996 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +0.621 Hz, DAC=39382.14, T_converge=57s
+2022-08-30 17:10:12.003 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:10:12.003 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:10:12.472 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:18:11.222 UTC: I(TimingThread): timing uncertainty check: T=+33.07C, heuristic=+550.6 (limit=+/-550.0), deltaT=+0.000|+2.011|+2.013 degC, elapsed=552s, expiry=1800s
+2022-08-30 17:18:11.230 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:18:11.234 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:18:11.238 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:18:12.238 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:18:13.953 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:18:13.960 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:18:27.316 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:18:27.320 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4586'N 121°36.7631'W alt=72.3m satellites=11
+2022-08-30 17:18:27.996 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=15s)
+2022-08-30 17:18:28.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -78 counts (-4.1 us)
+2022-08-30 17:18:28.003 UTC: I(TimingThread|PllController): clock drift estimate: -29.5 usec/hour (-0.157 counts/sec), measured over 496 s
+2022-08-30 17:18:28.003 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.157 Hz
+2022-08-30 17:19:24.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +1.028 Hz, DAC=39421.86, T_converge=58s
+2022-08-30 17:19:25.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:19:25.008 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:19:25.489 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:28:24.320 UTC: I(TimingThread): timing uncertainty check: T=+35.27C, heuristic=+673.8 (limit=+/-550.0), deltaT=-0.006|+2.205|+2.205 degC, elapsed=613s, expiry=1800s
+2022-08-30 17:28:24.328 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:28:24.332 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:28:24.332 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:28:25.332 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:28:27.035 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:28:27.042 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:28:39.300 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:28:39.304 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4568'N 121°36.7639'W alt=73.9m satellites=9
+2022-08-30 17:28:39.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=14s)
+2022-08-30 17:28:39.996 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -119 counts (-6.2 us)
+2022-08-30 17:28:40.003 UTC: I(TimingThread|PllController): clock drift estimate: -40.2 usec/hour (-0.214 counts/sec), measured over 555 s
+2022-08-30 17:28:40.003 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.214 Hz
+2022-08-30 17:29:36.993 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +1.542 Hz, DAC=39472.03, T_converge=58s
+2022-08-30 17:29:37.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:29:37.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:29:37.473 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:37:36.480 UTC: I(TimingThread): timing uncertainty check: T=+37.25C, heuristic=+562.3 (limit=+/-550.0), deltaT=+0.000|+1.976|+1.977 degC, elapsed=552s, expiry=2700s
+2022-08-30 17:37:36.484 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:37:36.488 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:37:36.488 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:37:37.492 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:37:39.199 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:37:39.207 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:37:51.308 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:37:51.316 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4561'N 121°36.7624'W alt=74.7m satellites=10
+2022-08-30 17:37:51.996 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=14s)
+2022-08-30 17:37:52.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -64 counts (-3.3 us)
+2022-08-30 17:37:52.003 UTC: I(TimingThread|PllController): clock drift estimate: -24.2 usec/hour (-0.129 counts/sec), measured over 495 s
+2022-08-30 17:37:52.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.129 Hz
+2022-08-30 17:38:45.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +1.872 Hz, DAC=39504.14, T_converge=55s
+2022-08-30 17:38:46.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:38:46.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:38:46.465 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:47:45.458 UTC: I(TimingThread): timing uncertainty check: T=+39.18C, heuristic=+594.4 (limit=+/-550.0), deltaT=+0.000|+1.928|+1.928 degC, elapsed=609s, expiry=2700s
+2022-08-30 17:47:45.461 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:47:45.465 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:47:45.469 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:47:46.469 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:47:48.176 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:47:48.184 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:47:57.297 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:47:57.301 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4562'N 121°36.7630'W alt=70.0m satellites=9
+2022-08-30 17:47:57.989 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=11s)
+2022-08-30 17:47:57.997 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -62 counts (-3.2 us)
+2022-08-30 17:47:58.004 UTC: I(TimingThread|PllController): clock drift estimate: -21.1 usec/hour (-0.112 counts/sec), measured over 552 s
+2022-08-30 17:47:58.004 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.112 Hz
+2022-08-30 17:48:52.993 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +2.134 Hz, DAC=39529.72, T_converge=56s
+2022-08-30 17:48:53.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:48:53.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:48:53.458 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 17:58:52.394 UTC: I(TimingThread): timing uncertainty check: T=+40.84C, heuristic=+584.1 (limit=+/-550.0), deltaT=+0.000|+1.660|+1.665 degC, elapsed=667s, expiry=2700s
+2022-08-30 17:58:52.402 UTC: I(TimingThread|freeRun): exit
+2022-08-30 17:58:52.406 UTC: I(TimingThread|discipline): enter
+2022-08-30 17:58:52.406 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 17:58:53.406 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 17:58:55.109 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 17:58:55.117 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 17:59:03.300 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 17:59:03.308 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4550'N 121°36.7611'W alt=58.4m satellites=9
+2022-08-30 17:59:03.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=10s)
+2022-08-30 17:59:04.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -37 counts (-1.9 us)
+2022-08-30 17:59:04.003 UTC: I(TimingThread|PllController): clock drift estimate: -11.4 usec/hour (-0.061 counts/sec), measured over 611 s
+2022-08-30 17:59:04.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.061 Hz
+2022-08-30 17:59:53.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +2.295 Hz, DAC=39545.38, T_converge=51s
+2022-08-30 17:59:54.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 17:59:54.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 17:59:54.333 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
+2022-08-30 18:11:53.472 UTC: I(TimingThread): timing uncertainty check: T=+42.35C, heuristic=+572.6 (limit=+/-550.0), deltaT=+0.000|+1.514|+1.519 degC, elapsed=781s, expiry=2700s
+2022-08-30 18:11:53.476 UTC: I(TimingThread|freeRun): exit
+2022-08-30 18:11:53.480 UTC: I(TimingThread|discipline): enter
+2022-08-30 18:11:53.484 UTC: I(TimingThread|discipline): wait for PPS
+2022-08-30 18:11:54.484 UTC: I(TimingThread|GnssProcessor): GNSS receiver enabled
+2022-08-30 18:11:56.191 UTC: I(gnssProcessor|NmeaParser): GNSS position fix valid
+2022-08-30 18:11:56.199 UTC: I(gnssProcessor|NmeaParser): GNSS satellite count ok
+2022-08-30 18:12:09.300 UTC: I(gnssProcessor|NmeaParser): GNSS PPS time valid
+2022-08-30 18:12:09.304 UTC: I(gnssProcessor|NmeaParser): GNSS Fix: 36°45.4564'N 121°36.7624'W alt=61.0m satellites=9
+2022-08-30 18:12:09.992 UTC: I(TimingThread|TimingSubsystem): GNSS lock acquired (duration=15s)
+2022-08-30 18:12:10.003 UTC: I(TimingThread|PllController): start: VCXO tick residual (rel. reference clock) = -18 counts (-0.9 us)
+2022-08-30 18:12:10.003 UTC: I(TimingThread|PllController): clock drift estimate: -4.6 usec/hour (-0.024 counts/sec), measured over 736 s
+2022-08-30 18:12:10.007 UTC: I(TimingThread|PllController): boost VCXO frequency offset by +0.024 Hz
+2022-08-30 18:12:55.997 UTC: I(TimingThread|PllController): converged: VCXO frequency offset ~ +2.369 Hz, DAC=39552.64, T_converge=47s
+2022-08-30 18:12:56.004 UTC: I(TimingThread|discipline): exit
+2022-08-30 18:12:56.004 UTC: I(TimingThread|freeRun): enter
+2022-08-30 18:12:56.340 UTC: I(TimingThread|GnssProcessor): GNSS receiver disabled
