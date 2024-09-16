@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>hvspatialpy &#8212; hvspatialpy</title>
+    <title>pltspatial &#8212; hvspatialpy</title>
   
   
   
@@ -176,7 +176,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="hvcorr_doc.html">hvcorr</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">hvspatialpy</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">pltspatial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hvspatialpygui.html">HVSpatialPYGui</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples</span></p>
@@ -367,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>hvspatialpy</h1>
+    <h1>pltspatial</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,15 +378,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1"><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals"><code class="docutils literal notranslate"><span class="pre">_plot_intervals</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#returns">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss"><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar"><code class="docutils literal notranslate"><span class="pre">_update_colorbar</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none"><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image"><code class="docutils literal notranslate"><span class="pre">_plot_site_image</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Returns</a></li>
@@ -394,7 +394,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none"><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations"><code class="docutils literal notranslate"><span class="pre">update_correlations</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Returns</a></li>
@@ -411,13 +411,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="hvspatialpy">
-<h1>hvspatialpy<a class="headerlink" href="#hvspatialpy" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pltspatial">
+<h1>pltspatial<a class="headerlink" href="#pltspatial" title="Link to this heading">#</a></h1>
 <p>This module is part of <code class="docutils literal notranslate"><span class="pre">hvspatialpy</span></code>, a Python package designed for evaluating the spatial variability of sites using spatially distributed HVSR (Horizontal-to-Vertical Spectral Ratio) measurements.</p>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
-<section id="plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1">
-<h3><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code><a class="headerlink" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1" title="Link to this heading">#</a></h3>
+<section id="plot-intervals">
+<h3><code class="docutils literal notranslate"><span class="pre">_plot_intervals</span></code><a class="headerlink" href="#plot-intervals" title="Link to this heading">#</a></h3>
 </section>
 <section id="description">
 <h3>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h3>
@@ -439,8 +439,8 @@ document.write(`
 <p>None. This function displays a plot.</p>
 </section>
 <hr class="docutils" />
-<section id="update-colorbar-ax-cbar-scatter-correlation-type-lcss">
-<h3><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code><a class="headerlink" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss" title="Link to this heading">#</a></h3>
+<section id="update-colorbar">
+<h3><code class="docutils literal notranslate"><span class="pre">_update_colorbar</span></code><a class="headerlink" href="#update-colorbar" title="Link to this heading">#</a></h3>
 </section>
 <section id="id1">
 <h3>Description<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
@@ -460,8 +460,8 @@ document.write(`
 <p>None. This function updates the colorbar.</p>
 </section>
 <hr class="docutils" />
-<section id="plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none">
-<h3><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code><a class="headerlink" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none" title="Link to this heading">#</a></h3>
+<section id="plot-site-image">
+<h3><code class="docutils literal notranslate"><span class="pre">_plot_site_image</span></code><a class="headerlink" href="#plot-site-image" title="Link to this heading">#</a></h3>
 </section>
 <section id="id4">
 <h3>Description<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
@@ -503,8 +503,8 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>: Updated DataFrame of the frequency intervals.</p>
 </section>
 <hr class="docutils" />
-<section id="update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none">
-<h3><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code><a class="headerlink" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none" title="Link to this heading">#</a></h3>
+<section id="update-correlations">
+<h3><code class="docutils literal notranslate"><span class="pre">update_correlations</span></code><a class="headerlink" href="#update-correlations" title="Link to this heading">#</a></h3>
 </section>
 <section id="id10">
 <h3>Description<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
@@ -610,15 +610,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals-ax1-freq-mean-ref-min-freq-max-freq-freq-trun-0-1"><code class="docutils literal notranslate"><span class="pre">_plot_intervals(ax1,</span> <span class="pre">freq,</span> <span class="pre">mean_ref,</span> <span class="pre">min_freq,</span> <span class="pre">max_freq,</span> <span class="pre">freq_trun=0.1)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-intervals"><code class="docutils literal notranslate"><span class="pre">_plot_intervals</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#returns">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar-ax-cbar-scatter-correlation-type-lcss"><code class="docutils literal notranslate"><span class="pre">_update_colorbar(ax,</span> <span class="pre">cbar,</span> <span class="pre">scatter,</span> <span class="pre">correlation_type='lcss')</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-colorbar"><code class="docutils literal notranslate"><span class="pre">_update_colorbar</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image-ax2-df-site-correlation-type-lcss-frequency-interval-none"><code class="docutils literal notranslate"><span class="pre">_plot_site_image(ax2,</span> <span class="pre">df_site,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-site-image"><code class="docutils literal notranslate"><span class="pre">_plot_site_image</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Returns</a></li>
@@ -626,7 +626,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Returns</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations-base-dir-site-xml-folder-name-unique-folder-name-ref-test-name-mean-file-name-unique-flag-true-auto-dist-calc-flag-true-freq-trun-0-1-dist-meas-df-none-loc-df-manual-none-correlation-type-lcss-frequency-interval-none-threshold-1-6-min-distance-1-global-constraint-sakoe-chiba-eps-0-75-sakoe-chiba-radius-10-dist-range-list-none"><code class="docutils literal notranslate"><span class="pre">update_correlations(base_dir,</span> <span class="pre">site,</span> <span class="pre">xml_folder_name,</span> <span class="pre">unique_folder_name,</span> <span class="pre">ref_test_name,</span> <span class="pre">mean_file_name,</span> <span class="pre">unique_flag=True,</span> <span class="pre">auto_dist_calc_flag=True,</span> <span class="pre">freq_trun=0.1,</span> <span class="pre">dist_meas_df=None,</span> <span class="pre">loc_df_manual=None,</span> <span class="pre">correlation_type='lcss',</span> <span class="pre">frequency_interval=None,</span> <span class="pre">threshold=1.6,</span> <span class="pre">min_distance=1,</span> <span class="pre">global_constraint='sakoe_chiba',</span> <span class="pre">eps=0.75,</span> <span class="pre">sakoe_chiba_radius=10,</span> <span class="pre">dist_range_list=None)</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-correlations"><code class="docutils literal notranslate"><span class="pre">update_correlations</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Description</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Parameters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Returns</a></li>
