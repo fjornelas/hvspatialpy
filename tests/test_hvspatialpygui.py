@@ -3,11 +3,6 @@ from unittest.mock import patch, MagicMock
 import os
 from hvspatialpy.hvspatialpygui import HVSpatialPYGui
 
-
-@patch('hvspatialpy_gui.update_correlations')
-@patch('hvspatialpy_gui.os.makedirs')
-@patch('hvspatialpy_gui.pd.DataFrame.to_csv')
-@patch('hvspatialpy_gui.matplotlib.pyplot.Figure.savefig')
 def test_on_button_click(mock_savefig, mock_to_csv, mock_makedirs, mock_update_correlations):
     """
     Test the on_button_click method of HVSpatialPYGui.
