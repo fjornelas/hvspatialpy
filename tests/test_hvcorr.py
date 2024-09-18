@@ -45,7 +45,7 @@ def test_compute_dist():
 def test_get_locations():
     # Define the path to the test data directory
     base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
-    site = '7'  # Assuming 'site7'
+    site = '7' 
     xml_folder_name = '7.0.0' 
 
     # Prepare the expected DataFrame
@@ -63,9 +63,9 @@ def test_get_locations():
     pd.testing.assert_frame_equal(result_df, expected_df)
 
 def test_dist_from_vert_arr():
-    base_dir = 'test_data'
-    site = 'site1'
-    xml_folder_name = 'xml'
+    base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
+    site = '7' 
+    xml_folder_name = '7.0.0' 
 
     # Prepare test data
     test_data = {
@@ -99,10 +99,10 @@ def test_dist_from_vert_arr():
             pd.testing.assert_frame_equal(result_df, expected_df)
 
 def test_create_frequency_dataframe():
-    base_dir = 'test_data'
-    site = 'site1'
-    freq = [0.1, 0.2, 0.3, 0.4, 0.5]
-    mean_arr = np.array([0.1, 0.2, 0.3, 0.4, 0.5])
+    base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
+    site = '7' 
+    freq = pd.read_csv(os.path.join(os.path.dirname(__file__), '../examples/data/7.0.0/Test_hvsr_mean.csv')['freq_Hz'] 
+    mean_arr = pd.read_csv(os.path.join(os.path.dirname(__file__), '../examples/data/7.0.0/Test_hvsr_mean.csv')['HVSR mean'] 
 
     # Prepare expected output
     expected_data = {
@@ -128,8 +128,8 @@ def test_create_frequency_dataframe():
 
 def test_compute_correlations():
     
-    base_dir = 'test_data'
-    site = 'site1'
+    base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
+    site = '7' 
     freq_df = pd.DataFrame({
         'site': ['site1'],
         'tests': ['test1'],
