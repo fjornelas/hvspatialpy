@@ -10,6 +10,5 @@ pluggy
 py
 pyparsing
 pytest
-unittest
 pytest-cov
 tomli
