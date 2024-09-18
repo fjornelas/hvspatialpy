@@ -1,6 +1,7 @@
 Pygments
 jupyter-book
 hvspatialpy
+numpy < 1.24
 attrs
 coverage
 iniconfig
