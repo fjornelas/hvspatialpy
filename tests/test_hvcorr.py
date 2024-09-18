@@ -42,29 +42,24 @@ def test_compute_dist():
 
 
 def test_get_locations():
-    # Prepare test data
-    test_data = {
+    # Define the path to the test data directory
+    base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
+    site = '7'  # Assuming 'site7'
+    xml_folder_name = '7.0.0' 
+
+    # Prepare the expected DataFrame
+    expected_data = {
         'tests': ['test1', 'test2'],
         'latitude': [34.05, 35.05],
         'longitude': [-118.25, -117.25]
     }
-    
-    # Create the expected DataFrame
-    expected_df = pd.DataFrame(test_data)
+    expected_df = pd.DataFrame(expected_data)
 
-    # Mock the `_get_locations` function
-    with patch('hvspatialpy.hvcorr._get_locations') as mock_get_locations:
-        # Configure the mock to return the expected DataFrame
-        mock_get_locations.return_value = expected_df
-        
-        # Call the function under test
-        base_dir = 'test_data'
-        site = 'site1'
-        xml_folder_name = 'xml'
-        result_df = _get_locations(base_dir, site, xml_folder_name)
-        
-        # Assert the result DataFrame matches the expected DataFrame
-        pd.testing.assert_frame_equal(result_df, expected_df)
+    # Call the function under test
+    result_df = _get_locations(base_dir, site, xml_folder_name)
+
+    # Assert the result DataFrame matches the expected DataFrame
+    pd.testing.assert_frame_equal(result_df, expected_df)
 
 def test_dist_from_vert_arr():
     base_dir = 'test_data'
