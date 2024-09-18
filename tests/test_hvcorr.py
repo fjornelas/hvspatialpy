@@ -80,11 +80,11 @@ def test_dist_from_vert_arr():
     loc_df = pd.DataFrame(test_data)
 
     # Mock the `_get_locations` function
-    with patch('your_module._get_locations') as mock_get_locations:
+    with patch('hvspatialpy.hvcorr._get_locations') as mock_get_locations:
         mock_get_locations.return_value = loc_df
         
         # Mock the `_compute_dist` function
-        with patch('your_module._compute_dist') as mock_compute_dist:
+        with patch('hvspatialpy.hvcorr._compute_dist') as mock_compute_dist:
             mock_compute_dist.return_value = 1000
             
             # Call the function under test
@@ -121,7 +121,7 @@ def test_create_frequency_dataframe():
     expected_df = pd.DataFrame(expected_data)
 
     # Mock the `create_frequency_dataframe` function
-    with patch('your_module.create_frequency_dataframe') as mock_create_frequency_dataframe:
+    with patch('hvspatialpy.hvcorr.create_frequency_dataframe') as mock_create_frequency_dataframe:
         mock_create_frequency_dataframe.return_value = expected_df
         
         # Call the function under test
@@ -158,7 +158,7 @@ def test_compute_correlations():
     expected_df = pd.DataFrame(expected_data)
 
     # Mock the `compute_correlations` function
-    with patch('your_module.compute_correlations') as mock_compute_correlations:
+    with patch('hvspatialpy.hvcorr.compute_correlations') as mock_compute_correlations:
         mock_compute_correlations.return_value = expected_df
         
         # Call the function under test
