@@ -1,3 +1,4 @@
+hvspatialpy
 Pygments
 jupyter-book
 numpy>=1.20
