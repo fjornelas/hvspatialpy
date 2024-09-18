@@ -95,7 +95,7 @@ def test_update_dataframe():
         assert f'freq_int_{i}_min' in df.columns
         assert f'freq_int_{i}_max' in df.columns
 
-@patch('hvspatialpy.plt.show')
+@patch('plt.show')
 def test_plot_intervals(mock_show):
     """Test the _plot_intervals function."""
     fig, ax1 = plt.subplots()
@@ -111,8 +111,8 @@ def test_plot_intervals(mock_show):
     # Check that plot functions are called
     assert ax1.get_legend() is not None
 
-@patch('hvspatialpy.plt.colorbar')
-@patch('hvspatialpy.plt.gca')
+@patch('plt.colorbar')
+@patch('plt.gca')
 def test_update_colorbar(mock_gca, mock_colorbar):
     """Test the _update_colorbar function."""
     fig, ax = plt.subplots()
@@ -125,7 +125,7 @@ def test_update_colorbar(mock_gca, mock_colorbar):
     # Check that colorbar was called with correct parameters
     mock_colorbar.assert_called_once()
 
-@patch('hvspatialpy.plt.show')
+@patch('plt.show')
 def test_plot_site_image(mock_show):
     """Test the _plot_site_image function."""
     fig, ax2 = plt.subplots()
