@@ -101,8 +101,10 @@ def test_dist_from_vert_arr():
 def test_create_frequency_dataframe():
     base_dir = os.path.join(os.path.dirname(__file__), '../examples/data')
     site = '7' 
-    freq = pd.read_csv(os.path.join(os.path.dirname(__file__), '../examples/data/7.0.0/Test_hvsr_mean.csv')['freq_Hz'] 
-    mean_arr = pd.read_csv(os.path.join(os.path.dirname(__file__), '../examples/data/7.0.0/Test_hvsr_mean.csv')['HVSR mean'] 
+    data = pd.read_csv(os.path.join(os.path.dirname(__file__), '../examples/data/7.0.0/Test_hvsr_mean.csv'))
+
+    freq = data['freq_Hz']
+    mean_arr = data['HVSR mean']
 
     # Prepare expected output
     expected_data = {
