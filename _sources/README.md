@@ -109,7 +109,7 @@ Examples of these can be found under the examples folder in the Github repositor
 If you use hvspatialpy (directly or as a dependency of another package) for work resulting in an academic publication or
 other instances, we would appreciate if you cite the following:
 
-> Ornelas, F. J. G., Brandenberg, S. J., & Stewart, J. P. (2024). hvspatialpy (Version 1.0.0) [Computer software].
+> Ornelas, F. J. G. (2024). hvspatialpy (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13770432.
 
 # Issues
 
