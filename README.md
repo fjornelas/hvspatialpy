@@ -24,7 +24,7 @@ Yes!](https://img.shields.io/badge/Open%20Source-Yes-green.svg)](https://github.
 <!-- Short description -->
 
 <p align="center">
-   Francisco Javier G. Ornelas<sup>1</sup>, Scott J. Brandenberg<sup>1</sup>, Jonathan P. Stewart<sup>1</sup>
+   Francisco Javier G. Ornelas<sup>1</sup>
 </p>
 
 <sup>1</sup> University of California, Los Angeles (UCLA) <br>
