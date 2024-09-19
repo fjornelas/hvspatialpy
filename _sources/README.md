@@ -44,10 +44,7 @@ Yes!](https://img.shields.io/badge/Open%20Source-Yes-green.svg)](https://github.
 
 ---
 
-A python package that can evaluate the spatial variability of a site utilizing the Horizontal-to-Vertical Spectral Ratio (HVSR). 
-This package works by taking multiple HVSR curves that were evalautes around a site, and compares them to a reference curve.
-These curves are then separated further by frequency interval to evalaute the variability in terms of resonant peaks. 
-This package was developed by Francisco Javier G. Ornelas under the supervision
+hvspatialpy is a Python package designed to assess the spatial variability of geological sites using the Horizontal-to-Vertical Spectral Ratio (HVSR) method. This package enables users to analyze multiple HVSR curves collected from various locations around a site and compare them against a reference curve, including assessments for different distances from the reference point. The package processes HVSR data by organizing the curves into specified frequency intervals and comparing HVSR measurements across varying distances. This structured approach allows for a detailed evaluation of variability, particularly concerning resonant peaks. By systematically analyzing the spatial distribution of these resonant features, users can gain insights into the subsurface characteristics of the site and identify areas of significant variability. This package was developed by Francisco Javier G. Ornelas under the supervision
 of Dr. Jonathan P. Stewart and Dr. Scott J. Brandenberg at the University of California, Los Angeles (UCLA). 
 
 # Background
